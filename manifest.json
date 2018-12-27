@@ -1,7 +1,7 @@
 {
-  "index.js": "/js/index.8cd8953405df20a4b5b5.bundle.js",
-  "logo.png": "/ebf0f11fdb6186dde66c63b5c54038de.png",
-  "icons/favicon.png": "/icons/manifest.webapp",
-  "icons/stats.json": "/icons/stats.json",
-  "index.html": "/index.html"
+  "index.js": "/evergreen-web-components/js/index.7be56dacfe00727bc02b.bundle.js",
+  "logo.png": "/evergreen-web-components/ebf0f11fdb6186dde66c63b5c54038de.png",
+  "icons/favicon.png": "/evergreen-web-components/icons/manifest.webapp",
+  "icons/stats.json": "/evergreen-web-components/icons/stats.json",
+  "index.html": "/evergreen-web-components/index.html"
 }
