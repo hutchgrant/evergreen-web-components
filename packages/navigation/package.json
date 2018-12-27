@@ -1,6 +1,6 @@
 {
   "name": "@evergreen-wc/eve-navigation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Navigation web component made with lit element",
   "main": "eve-navigation.js",
   "scripts": {
