@@ -23,6 +23,7 @@ const propertyList = [
 ];
 
 const usage = `
+import { html, LitElement } from '@polymer/lit-element';
 import '@evergreen-wc/eve-highlight';
 // highlightjs themes https://github.com/highlightjs/highlight.js/tree/master/src/styles
 import github from '../Highlight/themes/github.css';

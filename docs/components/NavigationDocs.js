@@ -22,6 +22,8 @@ const propertyList = [
 ];
 
 const usage = `
+import { html, LitElement } from '@polymer/lit-element';
+
 import '@evergreen-wc/eve-navigation';
 
 const menu = [
