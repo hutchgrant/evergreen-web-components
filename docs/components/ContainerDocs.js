@@ -44,7 +44,7 @@ class ContainerDocs extends LitElement {
         title="Container"
         description="A page layout container component"
         usage=${usage}
-        install="$ npm i @evergreen/eve-container"
+        install="$ npm i @evergreen-wc/eve-container"
         .props=${propertyList}
         >
         <div class="outter-container">

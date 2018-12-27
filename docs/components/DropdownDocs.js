@@ -86,7 +86,7 @@ class DropdownDocs extends LitElement {
       description="A styleable select input drop-down list"
       usage=${usage}
       styleVar=${styleVariables}
-      install="$ npm i @evergreen/eve-dropdown"
+      install="$ npm i @evergreen-wc/eve-dropdown"
       .props=${propertyList}
       >
         <eve-dropdown label="Options..." .options="${options}" .optionSelectedCallback="${this.handleSelection.bind(this)}" ></eve-dropdown>

@@ -94,7 +94,7 @@ class NavigationDocs extends LitElement {
         description="A simple responsive navigation component."
         usage=${usage}
         styleVar=${styleVar}
-        install="$ npm i @evergreen/eve-navigation"
+        install="$ npm i @evergreen-wc/eve-navigation"
         .props=${propertyList}
         >
         <eve-navigation brand="My Site" .menu=${menu} fluid></eve-navigation>

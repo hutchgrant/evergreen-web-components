@@ -72,7 +72,7 @@ class ButtonDocs extends LitElement {
         description="A styled button component"
         usage=${usage}
         .props=${propertyList}
-        install="$ npm i @evergreen/eve-button"
+        install="$ npm i @evergreen-wc/eve-button"
         styleVar=${styleVar}
         >
         <eve-button size="lg" href="/docs">Large href Button</eve-button>

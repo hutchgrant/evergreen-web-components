@@ -77,7 +77,7 @@ class HighlighterDocs extends LitElement {
         title="Syntax Highlighter"
         description="A highlight.js syntax highlighting component"
         usage=${usage}
-        install="$ npm i @evergreen/eve-highlight"
+        install="$ npm i @evergreen-wc/eve-highlight"
         .props=${propertyList}
         >
         <eve-highlight type="javascript" theme="${github}" code="${code}"></eve-highlight>

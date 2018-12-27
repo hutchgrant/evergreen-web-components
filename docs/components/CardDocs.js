@@ -45,7 +45,7 @@ class CardDocs extends LitElement {
         title="Card"
         description="A styled card component"
         usage=${usage}
-        install="$ npm i @evergreen/eve-card"
+        install="$ npm i @evergreen-wc/eve-card"
         .props=${propertyList}
         >
         <eve-card img='${logo}' size="md">

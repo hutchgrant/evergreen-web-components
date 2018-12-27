@@ -47,7 +47,7 @@ class RowDocs extends LitElement {
     <eve-docs
       title="Row"
       description="A centered flexbox row wrap layout component"
-      install="$ npm i @evergreen/layout"
+      install="$ npm i @evergreen-wc/layout"
       usage=${usage}
       >
         <eve-row>
