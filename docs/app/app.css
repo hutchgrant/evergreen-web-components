@@ -1,0 +1,13 @@
+:host {
+  --primary-color:green;
+  --secondary-color:#fff;
+  --nav-background:var(--primary-color);
+  --nav-brand-text-size:18px;
+  --nav-brand-text-color:var(--secondary-color);
+  --nav-menu-text-color:var(--secondary-color);
+  --nav-menu-text-size:18px;
+  --nav-menu-text-hover-color:var(--primary-color);
+  --nav-menu-text-hover-background:var(--secondary-color);
+  --nav-menu-drop-hover-background:#40a040;
+    height:100%;
+}

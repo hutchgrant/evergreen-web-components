@@ -1,0 +1,14 @@
+{
+  "name": "@evergreen/eve-navigation",
+  "version": "0.0.1",
+  "description": "Navigation web component made with lit element",
+  "main": "eve-navigation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grant Hutchinson(hutchgrant)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@polymer/lit-element": "^0.6.5"
+  }
+}

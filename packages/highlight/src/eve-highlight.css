@@ -1,0 +1,26 @@
+:host {
+  display: block;
+}
+
+pre {
+  margin: 0;
+}
+
+pre,
+code {
+  font-family: var(
+    --code-sample-font-family,
+    Operator Mono,
+    Inconsolata,
+    Roboto Mono,
+    monaco,
+    consolas,
+    monospace
+  );
+  font-size: var(--syntax-highlight-font-size, 14px);
+}
+
+.hljs {
+  padding: 0 20px;
+  line-height: var(--code-sample-line-height, 1.3);
+}

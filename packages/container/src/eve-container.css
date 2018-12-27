@@ -1,0 +1,47 @@
+:host {
+  @custom-media --screen-xs (max-width: 576px);
+  @custom-media --screen-sm (min-width: 576px);
+  @custom-media --screen-md (min-width: 768px);
+  @custom-media --screen-lg (min-width: 992px);
+  @custom-media --screen-xl (min-width: 1200px);
+
+  & .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  & .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (--screen-xs) {
+    & .container {
+      width: calc(100% - 30px);
+    }
+  }
+  @media (--screen-sm) {
+    & .container {
+      width: 540px;
+    }
+  }
+  @media (--screen-md) {
+    & .container {
+      width: 720px;
+    }
+  }
+  @media (--screen-lg) {
+    & .container {
+      width: 960px;
+    }
+  }
+  @media (--screen-xl) {
+    & .container {
+      width: 1140px;
+    }
+  }
+}

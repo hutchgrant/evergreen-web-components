@@ -1,0 +1,46 @@
+:host {
+  @custom-media --screen-xs (max-width: 550px);
+  @custom-media --screen-sm (min-width: 768px);
+  @custom-media --screen-md (min-width: 992px);
+  @custom-media --screen-lg (min-width: 1200px);
+
+  & table {
+    border-spacing: 0px;
+    border: 1px solid lightgray;
+    & thead{
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+    }
+    & th{
+      padding: 5px;
+      border-right: 1px solid lightgray;
+    }
+    & td{
+      padding: 20px;
+      border-top: 1px solid lightgray;
+      border-right: 1px solid lightgray;
+    }
+  }
+
+
+  /* @media(--screen-xs){
+    & table {
+      width:100%;
+    }
+  }
+  @media(--screen-sm){
+    & table {
+      width:85%;
+    }
+  }
+  @media(--screen-md){
+    & table {
+      width:70%;
+    }
+  }
+  @media(--screen-lg){
+    & table {
+      width:60%;
+    }
+  } */
+}
