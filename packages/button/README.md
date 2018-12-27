@@ -5,13 +5,13 @@ An Evergreen Button Web Component
 ### Install
 
 ```bash
-npm i @evergreen/eve-button
+npm i @evergreen-wc/eve-button
 ```
 
 ### Usage
 
 ```js
-import '@evergreen/eve-button';
+import '@evergreen-wc/eve-button';
 
 class MyComponent extends LitElement {
   handleClick() {

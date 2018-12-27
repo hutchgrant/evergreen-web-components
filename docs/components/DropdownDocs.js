@@ -22,7 +22,7 @@ const propertyList = [
 ];
 
 const usage = `
-import '@evergreen/eve-dropdown';
+import '@evergreen-wc/eve-dropdown';
 
 const options = [
   { value: 'value1', label: 'label1'},

@@ -5,13 +5,13 @@ An Evergreen Dropdown Web Component
 ### Install
 
 ```bash
-npm i @evergreen/eve-dropdown
+npm i @evergreen-wc/eve-dropdown
 ```
 
 ### Usage
 
 ```js
-import '@evergreen/eve-dropdown';
+import '@evergreen-wc/eve-dropdown';
 
 const options = [
   { value: 'value1', label: 'label1'},

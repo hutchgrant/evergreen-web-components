@@ -22,7 +22,7 @@ const propertyList = [
 ];
 
 const usage = `
-import '@evergreen/eve-navigation';
+import '@evergreen-wc/eve-navigation';
 
 const menu = [
   { label: 'Home', to: '/' },

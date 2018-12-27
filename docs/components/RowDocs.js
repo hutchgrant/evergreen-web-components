@@ -5,8 +5,8 @@ import '../../packages/layout/src/col/eve-col';
 import logo from '../logo.png';
 
 const usage = `
-import '@evergreen/eve-card';
-import '@evergreen/eve-row';
+import '@evergreen-wc/eve-card';
+import '@evergreen-wc/eve-row';
 
 class MyComponent extends LitElement {
   render() {

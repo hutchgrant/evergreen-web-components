@@ -18,7 +18,7 @@ const propertyList = [
 ];
 
 const usage = `
-import '@evergreen/eve-button';
+import '@evergreen-wc/eve-button';
 
 class MyComponent extends LitElement {
   handleClick() {

@@ -10,7 +10,7 @@ const propertyList = [
 ];
 
 const usage = `
-import '@evergreen/eve-container';
+import '@evergreen-wc/eve-container';
 
 class MyComponent extends LitElement {
   render() {

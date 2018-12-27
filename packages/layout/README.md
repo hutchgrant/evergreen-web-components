@@ -5,7 +5,7 @@ Evergreen layout centered, flexbox, row wrap, Web Component
 ### Install
 
 ```bash
-npm i @evergreen/eve-layout
+npm i @evergreen-wc/eve-layout
 ```
 
 ### Usage

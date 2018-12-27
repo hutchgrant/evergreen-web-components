@@ -5,13 +5,13 @@ An Evergreen Navigation Web Component
 ### Install
 
 ```bash
-npm i @evergreen/eve-navigation
+npm i @evergreen-wc/eve-navigation
 ```
 
 ### Usage
 
 ```js
-import '@evergreen/eve-navigation';
+import '@evergreen-wc/eve-navigation';
 
 const menu = [
   { label: 'Home', to: '/' },

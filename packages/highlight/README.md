@@ -5,16 +5,16 @@ An Evergreen Highlight.js Web Component
 ### Install
 
 ```bash
-npm i @evergreen/eve-highlight
+npm i @evergreen-wc/eve-highlight
 ```
 
 ### Usage
 
 ```js
-import '@evergreen/eve-highlight';
+import '@evergreen-wc/eve-highlight';
 
 // highlightjs themes https://github.com/highlightjs/highlight.js/tree/master/src/styles
-import github from '@evergreen/eve-highlight/themes/github.css';
+import github from '@evergreen-wc/eve-highlight/themes/github.css';
 
 // Javascript example
 // Escape $ with \

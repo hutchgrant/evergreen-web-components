@@ -5,13 +5,13 @@ An Evergreen Container Web Component
 ### Install
 
 ```bash
-npm i @evergreen/eve-card
+npm i @evergreen-wc/eve-card
 ```
 
 ### Usage
 
 ```js
-import '@evergreen/eve-container';
+import '@evergreen-wc/eve-container';
 
 class MyComponent extends LitElement {
   render() {

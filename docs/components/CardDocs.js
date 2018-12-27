@@ -17,7 +17,7 @@ const propertyList = [
 ];
 
 const usage = `
-import '@evergreen/eve-card';
+import '@evergreen-wc/eve-card';
 
 class MyComponent extends LitElement {
   render() {
