@@ -11,5 +11,8 @@
   "dependencies": {
     "@polymer/lit-element": "^0.6.5"
   },
-  "gitHead": "c06fe360cec4e5ea9a7e286086569b9b0d133a10"
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "339bfdf70e26e34e4fb9eef1ba62883d4f798d28"
 }
