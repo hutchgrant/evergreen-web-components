@@ -5,7 +5,7 @@ An Evergreen Container Web Component
 ### Install
 
 ```bash
-npm i @evergreen-wc/eve-card
+npm i @evergreen-wc/eve-container
 ```
 
 ### Usage

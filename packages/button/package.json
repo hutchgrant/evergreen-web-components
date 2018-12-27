@@ -2,7 +2,7 @@
   "name": "@evergreen-wc/eve-button",
   "version": "0.0.2",
   "description": "Button made with lit element",
-  "main": "eve-button.js",
+  "main": "src/eve-button.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

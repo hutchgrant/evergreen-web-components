@@ -2,7 +2,7 @@
   "name": "@evergreen-wc/eve-card",
   "version": "0.0.2",
   "description": "Card component made with lit element",
-  "main": "eve-card.js",
+  "main": "src/eve-card.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

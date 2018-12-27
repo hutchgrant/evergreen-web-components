@@ -11,8 +11,8 @@ npm i @evergreen-wc/eve-layout
 ### Usage
 
 ```js
-import '@evergreen/layout/eve-row';
-import '@evergreen/eve-card';
+import '@evergreen-wc/layout/eve-row';
+import '@evergreen-wc/eve-card';
 
 class MyComponent extends LitElement {
   render() {

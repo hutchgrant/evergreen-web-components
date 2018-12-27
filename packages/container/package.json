@@ -2,7 +2,7 @@
   "name": "@evergreen-wc/eve-container",
   "version": "0.0.2",
   "description": "Container component made with lit element",
-  "main": "eve-container.js",
+  "main": "src/eve-container.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

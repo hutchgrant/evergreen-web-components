@@ -2,7 +2,7 @@
   "name": "@evergreen-wc/eve-dropdown",
   "version": "0.0.2",
   "description": "Dropdown component made with lit element",
-  "main": "eve-dropdown.js",
+  "main": "src/eve-dropdown.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

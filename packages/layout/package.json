@@ -2,7 +2,7 @@
   "name": "@evergreen-wc/layout",
   "version": "0.0.2",
   "description": "Layout components made with lit element",
-  "main": "eve-row.js",
+  "main": "src/eve-row.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

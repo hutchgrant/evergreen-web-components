@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const publicPath = '/';
+const publicPath = '/evergreen-web-components/';
 
 module.exports = {
   context: path.resolve('./docs'),
@@ -11,7 +11,7 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, 'demos'),
+    path: path.join(__dirname, 'public'),
     filename: 'js/[name].[chunkhash].bundle.js',
     publicPath
   },

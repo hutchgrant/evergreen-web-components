@@ -135,7 +135,7 @@ class DocsPage extends LitElement {
             ${demos.map(({ label, id }) => {
               return html`
                 <li class="${this.id === id ? 'active' : ''}">
-                  <a @click="${() => this.goTo(`/docs/${id}`)}" aria-label="menu-item">${label}</a>
+                  <a @click="${() => this.goTo(`/evergreen-web-components/docs/${id}`)}" aria-label="menu-item">${label}</a>
                 </li>
               `;
               })}
