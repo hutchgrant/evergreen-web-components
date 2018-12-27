@@ -1,5 +1,5 @@
 {
-  "name": "@evergreen/layout",
+  "name": "@evergreen-wc/layout",
   "version": "0.0.1",
   "description": "Layout components made with lit element",
   "main": "eve-row.js",
@@ -9,7 +9,8 @@
   "author": "Grant Hutchinson(hutchgrant)",
   "license": "Apache-2.0",
   "dependencies": {
-    "@evergreen/eve-card": "^0.0.1",
+    "@evergreen-wc/eve-card": "^0.0.1",
     "@polymer/lit-element": "^0.6.5"
-  }
+  },
+  "gitHead": "c06fe360cec4e5ea9a7e286086569b9b0d133a10"
 }

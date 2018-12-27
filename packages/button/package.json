@@ -1,5 +1,5 @@
 {
-  "name": "@evergreen/eve-button",
+  "name": "@evergreen-wc/eve-button",
   "version": "0.0.1",
   "description": "Button made with lit element",
   "main": "eve-button.js",
@@ -10,5 +10,6 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@polymer/lit-element": "^0.6.5"
-  }
+  },
+  "gitHead": "c06fe360cec4e5ea9a7e286086569b9b0d133a10"
 }

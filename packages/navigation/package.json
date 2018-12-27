@@ -1,5 +1,5 @@
 {
-  "name": "@evergreen/eve-navigation",
+  "name": "@evergreen-wc/eve-navigation",
   "version": "0.0.1",
   "description": "Navigation web component made with lit element",
   "main": "eve-navigation.js",
@@ -10,5 +10,6 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@polymer/lit-element": "^0.6.5"
-  }
+  },
+  "gitHead": "c06fe360cec4e5ea9a7e286086569b9b0d133a10"
 }
