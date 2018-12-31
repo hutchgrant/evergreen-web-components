@@ -309,7 +309,7 @@ class tt extends Je{update(e){super.update(e);const t=this.render();t instanceof
             <p>Quickly build modern, dynamic, performant, and <strong>evergreen</strong> web applications.
               By leveraging more of the the web's native capabilities, application's can become more consistent,
               portable, and maintainable. </p>
-            <eve-button size="lg" href="/docs">Get Started</eve-button>
+            <eve-button size="lg" href="/evergreen-web-components/docs">Get Started</eve-button>
           </div>
           <div class="logo">
             <img src="${se.a}">
@@ -542,8 +542,8 @@ class gn extends mn{update(e){super.update(e);const t=this.render();t instanceof
       <eve-docs
         title="Container"
         description="A page layout container component"
-        usage=${"\nimport '@evergreen-wc/eve-container';\n\nclass MyComponent extends LitElement {\n  render() {\n    return html`\n      <eve-container fluid></eve-container>\n    `;\n  }\n}\ncustomElements.define('my-component', MyComponent);\n"}
-        install="$ npm i @evergreen/eve-container"
+        usage=${"\nimport { html, LitElement } from '@polymer/lit-element';\nimport '@evergreen-wc/eve-container';\n\nclass MyComponent extends LitElement {\n  render() {\n    return html`\n      <eve-container fluid></eve-container>\n    `;\n  }\n}\ncustomElements.define('my-component', MyComponent);\n"}
+        install="$ npm i @evergreen-wc/eve-container"
         .props=${bn}
         >
         <div class="outter-container">
@@ -727,9 +727,9 @@ class yr extends gr{update(e){super.update(e);const t=this.render();t instanceof
     <eve-docs
       title="Dropdown"
       description="A styleable select input drop-down list"
-      usage=${"\nimport '@evergreen-wc/eve-dropdown';\n\nconst options = [\n  { value: 'value1', label: 'label1'},\n  { value: 'value2', label: 'label2'},\n  { value: 'value3', label: 'label3'},\n];\n\nclass MyComponent extends LitElement {\n  handleSelection(value, idx) {\n    console.log('selected', value);\n    console.log('index', idx);\n  }\n\n  render() {\n    return html`\n      <eve-dropdown label=\"Options...\" .options='${options}' .optionSelectedCallback=\"${this.handleSelection.bind(this)}\" ></eve-dropdown>\n    `;\n  }\n}\ncustomElements.define('my-component', MyComponent);\n"}
+      usage=${"\nimport { html, LitElement } from '@polymer/lit-element';\nimport '@evergreen-wc/eve-dropdown';\n\nconst options = [\n  { value: 'value1', label: 'label1'},\n  { value: 'value2', label: 'label2'},\n  { value: 'value3', label: 'label3'},\n];\n\nclass MyComponent extends LitElement {\n  handleSelection(value, idx) {\n    console.log('selected', value);\n    console.log('index', idx);\n  }\n\n  render() {\n    return html`\n      <eve-dropdown label=\"Options...\" .options='${options}' .optionSelectedCallback=\"${this.handleSelection.bind(this)}\" ></eve-dropdown>\n    `;\n  }\n}\ncustomElements.define('my-component', MyComponent);\n"}
       styleVar=${"\n/* Example style */\n--primary-color: #41a6ef;\n--secondary-color: #fff;\n--dropdown-color: var(--primary-color);\n--dropdown-border-color: var(--primary-color);\n--dropdown-text-color: var(--secondary-color);\n--dropdown-text-size: 1rem;\n--dropdown-text-hover-color: var(--secondary-color);\n--dropdown-text-expanded-color: var(--primary-color);\n--dropdown-text-background-hover: var(--primary-color);\n--dropdown-timing: .3s;\n"}
-      install="$ npm i @evergreen/eve-dropdown"
+      install="$ npm i @evergreen-wc/eve-dropdown"
       .props=${Nr}
       >
         <eve-dropdown label="Options..." .options="${Sr}" .optionSelectedCallback="${this.handleSelection.bind(this)}" ></eve-dropdown>
@@ -925,9 +925,9 @@ class So extends xo{update(e){super.update(e);const t=this.render();t instanceof
       <eve-docs
         title="Navigation"
         description="A simple responsive navigation component."
-        usage=${"\nimport '@evergreen-wc/eve-navigation';\n\nconst menu = [\n  { label: 'Home', to: '/' },\n  { label: 'Blog', to: '/blog' },\n  { label: 'Portfolio', to: '/portfolio',\n    dropdown: [\n      { label: 'dropdown item 1', to: '/demos1' },\n      { label: 'dropdown item 2', to: '/demos2' }\n    ]\n  },\n  { label: 'Photos', to: '/photos' },\n  { label: 'Contact', to: '/contact' }\n];\n\nclass MyComponent extends LitElement {\n  render() {\n    return html`\n      <eve-navigation brand=\"My Website\" .menu=${menu} fluid></eve-navigation>\n    `;\n  }\n}\ncustomElements.define('my-component', MyComponent);\n"}
+        usage=${"\nimport { html, LitElement } from '@polymer/lit-element';\n\nimport '@evergreen-wc/eve-navigation';\n\nconst menu = [\n  { label: 'Home', to: '/' },\n  { label: 'Blog', to: '/blog' },\n  { label: 'Portfolio', to: '/portfolio',\n    dropdown: [\n      { label: 'dropdown item 1', to: '/demos1' },\n      { label: 'dropdown item 2', to: '/demos2' }\n    ]\n  },\n  { label: 'Photos', to: '/photos' },\n  { label: 'Contact', to: '/contact' }\n];\n\nclass MyComponent extends LitElement {\n  render() {\n    return html`\n      <eve-navigation brand=\"My Website\" .menu=${menu} fluid></eve-navigation>\n    `;\n  }\n}\ncustomElements.define('my-component', MyComponent);\n"}
         styleVar=${"\n--primary-color: green;\n--secondary-color: #fff;\n--nav-background: var(--primary-color);\n--nav-brand-text-size: 18px;\n--nav-brand-text-color: var(--secondary-color);\n--nav-menu-text-color: var(--secondary-color);\n--nav-menu-text-size:18px;\n--nav-menu-text-hover-color: var(--primary-color);\n--nav-menu-text-hover-background: var(--secondary-color);\n--nav-menu-drop-hover-background: color(green tint(25%));\n"}
-        install="$ npm i @evergreen/eve-navigation"
+        install="$ npm i @evergreen-wc/eve-navigation"
         .props=${To}
         >
         <eve-navigation brand="My Site" .menu=${Co} fluid></eve-navigation>
@@ -936,8 +936,8 @@ class So extends xo{update(e){super.update(e);const t=this.render();t instanceof
       <eve-docs
         title="Syntax Highlighter"
         description="A highlight.js syntax highlighting component"
-        usage=${"\nimport '@evergreen-wc/eve-highlight';\n// highlightjs themes https://github.com/highlightjs/highlight.js/tree/master/src/styles\nimport github from '../Highlight/themes/github.css';\n\n// Javascript example\n// Escape $ with \\\nconst code = `\nclass MyComponent extends LitElement {\n  constructor() {\n    this.name = 'helloworld'\n  }\n\n  renderThing() {\n    if(this.name === 'helloworld'){\n      console.log(this.name)\n    }\n  }\n}\ncustomElements.define('my-component', MyComponent);\n`;\n\nclass SomeComponent extends LitElement {\n  render() {\n    return html`\n      <eve-highlight type=\"js\" theme=\"${github}\" code=\"${code}\"></eve-highlight>\n    `;\n  }\n}\ncustomElements.define('some-component', SomeComponent);\n"}
-        install="$ npm i @evergreen/eve-highlight"
+        usage=${"\nimport { html, LitElement } from '@polymer/lit-element';\nimport '@evergreen-wc/eve-highlight';\n// highlightjs themes https://github.com/highlightjs/highlight.js/tree/master/src/styles\nimport github from '../Highlight/themes/github.css';\n\n// Javascript example\n// Escape $ with \\\nconst code = `\nclass MyComponent extends LitElement {\n  constructor() {\n    this.name = 'helloworld'\n  }\n\n  renderThing() {\n    if(this.name === 'helloworld'){\n      console.log(this.name)\n    }\n  }\n}\ncustomElements.define('my-component', MyComponent);\n`;\n\nclass SomeComponent extends LitElement {\n  render() {\n    return html`\n      <eve-highlight type=\"js\" theme=\"${github}\" code=\"${code}\"></eve-highlight>\n    `;\n  }\n}\ncustomElements.define('some-component', SomeComponent);\n"}
+        install="$ npm i @evergreen-wc/eve-highlight"
         .props=${Mo}
         >
         <eve-highlight type="javascript" theme="${ko.a}" code="${"\n// javascript example\nclass MyComponent extends LitElement {\n  constructor() {\n    this.name = 'helloworld'\n  }\n\n  renderThing() {\n    if(this.name === 'helloworld'){\n      console.log(this.name)\n    }\n  }\n}\ncustomElements.define('my-component', MyComponent);\n"}"></eve-highlight>
@@ -1128,8 +1128,8 @@ class Oi extends Ci{update(e){super.update(e);const t=this.render();t instanceof
     <eve-docs
       title="Row"
       description="A centered flexbox row wrap layout component"
-      install="$ npm i @evergreen/layout"
-      usage=${'\nimport \'@evergreen-wc/eve-card\';\nimport \'@evergreen-wc/eve-row\';\n\nclass MyComponent extends LitElement {\n  render() {\n    return html`\n    <eve-row>\n      <eve-card img="${logo}" size="xs">\n        <h1>Example Card</h1>\n        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>\n      </eve-card>\n      <eve-card img="${logo}" size="xs">\n        <h1>Example Card</h1>\n        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>\n      </eve-card>\n      <eve-card img="${logo}" size="xs">\n        <h1>Example Card</h1>\n        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>\n      </eve-card>\n      <eve-card img="${logo}" size="xs">\n        <h1>Example Card</h1>\n        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>\n      </eve-card>\n    </eve-row>\n    `;\n  }\n}\ncustomElements.define(\'my-component\', MyComponent);\n'}
+      install="$ npm i @evergreen-wc/layout"
+      usage=${'\nimport { html, LitElement } from \'@polymer/lit-element\';\nimport \'@evergreen-wc/eve-card\';\nimport \'@evergreen-wc/layout\';\n\nclass MyComponent extends LitElement {\n  render() {\n    return html`\n    <eve-row>\n      <eve-card img="${logo}" size="xs">\n        <h1>Example Card</h1>\n        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>\n      </eve-card>\n      <eve-card img="${logo}" size="xs">\n        <h1>Example Card</h1>\n        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>\n      </eve-card>\n      <eve-card img="${logo}" size="xs">\n        <h1>Example Card</h1>\n        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>\n      </eve-card>\n      <eve-card img="${logo}" size="xs">\n        <h1>Example Card</h1>\n        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>\n      </eve-card>\n    </eve-row>\n    `;\n  }\n}\ncustomElements.define(\'my-component\', MyComponent);\n'}
       >
         <eve-row>
           <eve-card img="${se.a}" size="xs">
@@ -1329,9 +1329,9 @@ class Os extends Cs{update(e){super.update(e);const t=this.render();t instanceof
       <eve-docs
         title="Button"
         description="A styled button component"
-        usage=${'\nimport \'@evergreen-wc/eve-button\';\n\nclass MyComponent extends LitElement {\n  handleClick() {\n    alert(\'button clicked!\');\n  }\n\n  render() {\n    return html`\n      <eve-button size="md" href="/docs">Medium href Button</eve-button>\n      <eve-button size="md" .onClick="${this.handleClick.bind(this)}">Medium function Button</eve-button>\n    `;\n  }\n}\n'}
+        usage=${'\nimport { html, LitElement } from \'@polymer/lit-element\';\nimport \'@evergreen-wc/eve-button\';\n\nclass MyComponent extends LitElement {\n  handleClick() {\n    alert(\'button clicked!\');\n  }\n\n  render() {\n    return html`\n      <eve-button size="md" href="/docs">Medium href Button</eve-button>\n      <eve-button size="md" .onClick="${this.handleClick.bind(this)}">Medium function Button</eve-button>\n    `;\n  }\n}\n'}
         .props=${Vs}
-        install="$ npm i @evergreen/eve-button"
+        install="$ npm i @evergreen-wc/eve-button"
         styleVar=${"\n--primary-color: #007f1d;\n--secondary-color:#fff;\n--btn-background: transparent;\n--btn-border-color: var(--primary-color);\n--btn-text-color: var(--primary-color);\n--btn-hover-background-color: var(--primary-color);\n--btn-hover-text-color: var(--secondary-color);\n--btn-hover-border-color: var(--primary-color);\n--btn-border-radius: 5px\n"}
         >
         <eve-button size="lg" href="/docs">Large href Button</eve-button>
@@ -1517,8 +1517,8 @@ class Ma extends Oa{update(e){super.update(e);const t=this.render();t instanceof
       <eve-docs
         title="Card"
         description="A styled card component"
-        usage=${"\nimport '@evergreen-wc/eve-card';\n\nclass MyComponent extends LitElement {\n  render() {\n    return html`\n    <eve-card img='${logo}' size=\"md\">\n      <h1>Example Card</h1>\n      <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>\n    </eve-card>\n    `;\n  }\n}\ncustomElements.define('my-component', MyComponent);\n"}
-        install="$ npm i @evergreen/eve-card"
+        usage=${"\nimport { html, LitElement } from '@polymer/lit-element';\nimport '@evergreen-wc/eve-card';\n\nclass MyComponent extends LitElement {\n  render() {\n    return html`\n    <eve-card img='${logo}' size=\"md\">\n      <h1>Example Card</h1>\n      <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>\n    </eve-card>\n    `;\n  }\n}\ncustomElements.define('my-component', MyComponent);\n"}
+        install="$ npm i @evergreen-wc/eve-card"
         .props=${$a}
         >
         <eve-card img='${se.a}' size="md">
@@ -1604,7 +1604,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </div>
 
       ${this.renderPage()}
-    `}});customElements.define("docs-page",dl),(e=>{e.addReducers({router:el}),Ya(e)})(al);const pl=[{label:"Home",to:"/"},{label:"About",to:"/about",dropdown:[{label:"Dropdown Item 1",to:"/demos1"},{label:"Dropdown Item 3",to:"/demos2"}]},{label:"Docs",to:"/docs",dropdown:[{label:"dropdown item 1",to:"/docs1"},{label:"dropdown item 2",to:"/docs2"}]},{label:"Examples",to:"/examples"}];customElements.define("eve-app",class extends(Ua(al)(ee)){render(){return M`
+    `}});customElements.define("docs-page",dl),(e=>{e.addReducers({router:el}),Ya(e)})(al);const pl=[{label:"Home",to:"/evergreen-web-components"},{label:"Docs",to:"/docs"},{label:"Examples",to:"/examples"}];customElements.define("eve-app",class extends(Ua(al)(ee)){render(){return M`
     <style>
       ${ne.a}
     </style>
