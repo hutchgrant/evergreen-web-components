@@ -8,7 +8,7 @@ module.exports = webpackMerge(commonConfig, {
   mode: 'production',
 
   performance: {
-    hints: 'error'
+    hints: false
   },
 
   plugins: [

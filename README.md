@@ -11,6 +11,64 @@ This repo and Project Evergreen itself are still young and maturing rapidly.  Th
 
 > 🙏 Please feel free to contribute, we are always looking forward to meeting like minded developers to collaborate with!
 
+### Adding new package
+
+Package should be organized as follows:
+
+```
+src/
+  eve-yourcomponent.js
+  eve-yourcomponent.css
+package.json
+README.md
+```
+
+The package.json should contain:
+
+```json
+  "name": "@evergreen-wc/eve-yourcomponent",
+  "version": "0.0.4",
+  "description": "Your component made with lit element",
+  "main": "src/eve-yourcomponent.js",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+```
+
+### Publishing Packages
+
+Make sure you commit all changes then run:
+
+```bash
+npx lerna publish
+```
+
+Select patch
+
+### Publishing Documentation
+
+You need [setup a git worktree](https://gist.github.com/cobyism/4730490#gistcomment-810877) for the gh-pages branch in a folder called dist
+
+```
+git worktree add dist gh-pages
+```
+
+Documentation components are in the docs folder. This folder is built with:
+
+```bash
+npm run gh-pages
+```
+
+then commit and push to gh-pages branch with:
+
+```bash
+cd dist
+git add *
+git commit -m "Updated documentation: updated button component usage" -S
+git push origin gh-pages
+```
+
 ### License
 
 Released under the Apache-2.0 License
