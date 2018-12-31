@@ -2,6 +2,8 @@
 
 Evergreen layout centered, flexbox, row wrap, Web Component
 
+[Demo](https://hutchgrant.github.io/evergreen-web-components/)
+
 ### Install
 
 ```bash
@@ -11,6 +13,7 @@ npm i @evergreen-wc/eve-layout
 ### Usage
 
 ```js
+import { html, LitElement } from '@polymer/lit-element';
 import '@evergreen-wc/layout/eve-row';
 import '@evergreen-wc/eve-card';
 

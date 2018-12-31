@@ -13,25 +13,8 @@ const menu = [{
   label: 'Home',
   to: '/evergreen-web-components'
 }, {
-  label: 'About',
-  to: '/about',
-  dropdown: [{
-    label: 'Dropdown Item 1',
-    to: '/demos1'
-  }, {
-    label: 'Dropdown Item 3',
-    to: '/demos2'
-  }]
-}, {
   label: 'Docs',
-  to: '/docs',
-  dropdown: [{
-    label: 'dropdown item 1',
-    to: '/docs1'
-  }, {
-    label: 'dropdown item 2',
-    to: '/docs2'
-  }]
+  to: '/docs'
 }, {
   label: 'Examples',
   to: '/examples'

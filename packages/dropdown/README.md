@@ -2,6 +2,8 @@
 
 An Evergreen Dropdown Web Component
 
+[Demo](https://hutchgrant.github.io/evergreen-web-components/)
+
 ### Install
 
 ```bash
@@ -11,6 +13,7 @@ npm i @evergreen-wc/eve-dropdown
 ### Usage
 
 ```js
+import { html, LitElement } from '@polymer/lit-element';
 import '@evergreen-wc/eve-dropdown';
 
 const options = [

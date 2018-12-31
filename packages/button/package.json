@@ -3,6 +3,10 @@
   "version": "0.0.3",
   "description": "Button made with lit element",
   "main": "src/eve-button.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hutchgrant/evergreen-web-components.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

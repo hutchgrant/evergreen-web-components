@@ -2,6 +2,8 @@
 
 An Evergreen Highlight.js Web Component
 
+[Demo](https://hutchgrant.github.io/evergreen-web-components/)
+
 ### Install
 
 ```bash
@@ -11,6 +13,7 @@ npm i @evergreen-wc/eve-highlight
 ### Usage
 
 ```js
+import { html, LitElement } from '@polymer/lit-element';
 import '@evergreen-wc/eve-highlight';
 
 // highlightjs themes https://github.com/highlightjs/highlight.js/tree/master/src/styles
