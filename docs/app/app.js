@@ -14,10 +14,10 @@ const menu = [{
   to: '/evergreen-web-components'
 }, {
   label: 'Docs',
-  to: '/docs'
+  to: '/evergreen-web-components/docs'
 }, {
   label: 'Examples',
-  to: '/examples'
+  to: '/evergreen-web-components/examples'
 }];
 
 class app extends connect(store)(LitElement) {

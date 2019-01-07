@@ -11,9 +11,9 @@ This repo and Project Evergreen itself are still young and maturing rapidly.  Th
 
 > 🙏 Please feel free to contribute, we are always looking forward to meeting like minded developers to collaborate with!
 
-### Adding new package
+### Package Guidelines
 
-Package should be organized as follows:
+Packages should be organized as follows:
 
 ```
 src/
@@ -48,7 +48,7 @@ Select patch
 
 ### Publishing Documentation
 
-You need [setup a git worktree](https://gist.github.com/cobyism/4730490#gistcomment-810877) for the gh-pages branch in a folder called dist
+You need [setup a git worktree](https://gist.github.com/cobyism/4730490#gistcomment-2337463) for the gh-pages branch in a folder called dist
 
 ```
 git worktree add dist gh-pages
