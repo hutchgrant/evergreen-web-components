@@ -6,7 +6,7 @@
     "build": "rimraf ./public && webpack --config ./webpack.config.prod.js --progress",
     "develop": "webpack-dev-server --config ./webpack.config.develop.js --open",
     "gh-pages": "npm run build && cp -rv ./public/* ./dist/",
-    "lint": "eslint \"*.js\" \"./src/**/*.js\"",
+    "lint": "eslint \"./packages/**/*.js\"  \"./docs/**/*.js\"",
     "serve": "npm run build && ws",
     "start": "npm run develop",
     "test": "rimraf ./reports && karma start"
