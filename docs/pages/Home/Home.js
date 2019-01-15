@@ -19,7 +19,7 @@ class HomePage extends LitElement {
             <p>Quickly build modern, dynamic, performant, and <strong>evergreen</strong> web applications.
               By leveraging more of the the web's native capabilities, application's can become more consistent,
               portable, and maintainable. </p>
-            <eve-button size="lg" href="/evergreen-web-components/docs">Get Started</eve-button>
+            <eve-button size="lg" href="/docs">Get Started</eve-button>
           </div>
           <div class="logo">
             <img src="${logo}">

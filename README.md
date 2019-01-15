@@ -2,8 +2,8 @@
 [![GitHub release](https://img.shields.io/github/tag/hutchgrant/evergreen-web-components.svg)](https://github.com/hutchgrant/evergreen-web-components/tags)
 ![CircleCI branch](https://img.shields.io/circleci/project/github/hutchgrant/evergreen-web-components/master.svg?style=plastic)
 [![GitHub issues](https://img.shields.io/github/issues-raw/hutchgrant/evergreen-web-components.svg)](https://github.com/hutchgrant/evergreen-web-components/issues)
-[![GitHub pullrequest](https://img.shields.io/github/issues-pr-raw/hutchgrant/evergreen-web-components.svg)](https://github.com/hutchgrant/evergreen-web-components/issues)
-[![GitHub license](https://img.shields.io/badge/license-apache-blue.svg)](https://raw.githubusercontent.com/hutchgrant/evergreen-web-components/master/LICENSE.md)
+[![GitHub pulls](https://img.shields.io/github/issues-pr-raw/hutchgrant/evergreen-web-components.svg)](https://github.com/hutchgrant/evergreen-web-components/pulls)
+[![GitHub license](https://img.shields.io/badge/license-apache-blue.svg)](https://raw.githubusercontent.com/hutchgrant/evergreen-web-components/master/LICENSE)
 
 ## Overview
 A library of simple web components built on top of [LitElement](https://github.com/Polymer/lit-element)

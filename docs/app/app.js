@@ -11,13 +11,13 @@ connectRouter(store);
 
 const menu = [{
   label: 'Home',
-  to: '/evergreen-web-components'
+  to: '/'
 }, {
   label: 'Docs',
-  to: '/evergreen-web-components/docs'
+  to: '/docs'
 }, {
   label: 'Examples',
-  to: '/evergreen-web-components/examples'
+  to: '/examples'
 }];
 
 class app extends connect(store)(LitElement) {
@@ -27,9 +27,9 @@ class app extends connect(store)(LitElement) {
       ${css}
     </style>
       <eve-navigation brand="Project Evergreen" fixed fluid .menu="${menu}"></eve-navigation>
-      <lit-route path="/evergreen-web-components/" component="home-page" active=""></lit-route>
-      <lit-route path="/evergreen-web-components/docs" component="docs-page"></lit-route>
-      <lit-route path="/evergreen-web-components/docs/:id" component="docs-page"></lit-route>
+      <lit-route path="/" component="home-page" active=""></lit-route>
+      <lit-route path="/docs" component="docs-page"></lit-route>
+      <lit-route path="/docs/:id" component="docs-page"></lit-route>
       <!-- <lit-route path="/examples" component="examples-page"></lit-route> -->
     `;
   }

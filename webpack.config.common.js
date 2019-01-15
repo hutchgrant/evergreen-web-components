@@ -1,7 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const publicPath = '/evergreen-web-components/';
+const publicPath = '/';
 
 module.exports = {
   context: path.resolve('./docs'),
@@ -43,6 +44,9 @@ module.exports = {
   },
 
   plugins: [
+    new CopyWebpackPlugin([
+      { from: '404.html', to: './404.html' }
+    ]),
     new HtmlWebpackPlugin({
       template: './index.html',
       chunksSortMode: 'dependency'
