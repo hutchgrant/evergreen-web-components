@@ -2,7 +2,7 @@
 
 An Evergreen Card Web Component
 
-[Demo](https://hutchgrant.github.io/evergreen-web-components/)
+[Demo](https://hutchgrant.github.io/evergreen-web-components/docs/card)
 
 
 ### Install

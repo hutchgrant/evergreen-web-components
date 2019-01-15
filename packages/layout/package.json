@@ -2,7 +2,7 @@
   "name": "@evergreen-wc/layout",
   "version": "0.0.5",
   "description": "Layout components made with lit element",
-  "main": "src/eve-row.js",
+  "main": "src/row/eve-row.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/hutchgrant/evergreen-web-components.git"

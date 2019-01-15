@@ -2,7 +2,7 @@
 
 Evergreen layout centered, flexbox, row wrap, Web Component
 
-[Demo](https://hutchgrant.github.io/evergreen-web-components/)
+[Demo](https://hutchgrant.github.io/evergreen-web-components/docs/row)
 
 ### Install
 

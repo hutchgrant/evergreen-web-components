@@ -1,7 +1,6 @@
 import { html, LitElement } from '@polymer/lit-element';
 import './DocsTable';
 import '../../../packages/highlight/src/eve-highlight';
-// import github from '../Highlight/themes/github.css';
 import qtcreator from '../../../packages/highlight/themes/qtcreator-light.css';
 
 class DocsPage extends LitElement {
@@ -21,26 +20,37 @@ class DocsPage extends LitElement {
 
     return html`
       <div>
-        <h2>${title}</h2>
-        <p>${description}</p>
-        <slot></slot>
+        <div class="summary">
+          <h2>${title}</h2>
+          <p>${description}</p>
+          <slot></slot>
+        </div>
         <br />
-        <h3>Get Started</h3>
-        <eve-highlight type="shell" theme="${qtcreator}" code="${install}"></eve-highlight>
-        <br />
-        <h3>Usage</h3>
-        <eve-highlight type="javascript" theme="${qtcreator}" code="${usage}"></eve-highlight>
-        <br />
+        <div class="install">
+          <h3>Get Started</h3>
+          <eve-highlight type="shell" theme="${qtcreator}" code="${install}"></eve-highlight>
+          <br />
+        </div>
+        <div class="usage">
+          <h3>Usage</h3>
+          <eve-highlight type="javascript" theme="${qtcreator}" code="${usage}"></eve-highlight>
+          <br />
+        </div>
+
         ${props ? html`
-        <h3>Props</h3>
-        <eve-docs-table .items="${props}"></eve-docs-table>
-        <br />
+        <div class="props">
+          <h3>Props</h3>
+          <eve-docs-table .items="${props}"></eve-docs-table>
+          <br />
+        </div>
         ` : ''}
         ${styleVar
           ? html`
+          <div class="styling">
             <h3>Styling</h3>
             <eve-highlight type="css" theme="${qtcreator}" code="${styleVar}"></eve-highlight>
-            <br />`
+            <br />
+          </div>`
           : ''}
 
       </div>
