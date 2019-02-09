@@ -1,6 +1,6 @@
 {
   "name": "@evergreen-wc/eve-container",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Container component made with lit element",
   "main": "src/eve-container.js",
   "repository": {
