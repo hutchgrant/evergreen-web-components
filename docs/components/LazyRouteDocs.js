@@ -9,7 +9,7 @@ import store from '../store.js';
 const propertyList = [
   {
     property: 'loader',
-    description: 'Route Object containing a dynamic import function(load), element name(element) and the current activeRoute'
+    description: 'Route Object containing a dynamic import function(load), element name(element), url path, and the current activeRoute'
   }
 ];
 
@@ -84,6 +84,14 @@ module.exports = {
   ]
 };
 
+// Modify your .eslintrc to contain
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  }
+}
 `;
 
 const install = `

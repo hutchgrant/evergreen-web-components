@@ -6,10 +6,10 @@ Lazyload routes with lit-redux-router
 
 ```bash
 $ npm i @evergreen-wc/lazyroute lit-html lit-redux-router pwa-helpers redux redux-thunk
-$ npm i --save-dev @babel/plugin-syntax-dynamic-import"
+$ npm i --save-dev babel-eslint @babel/plugin-syntax-dynamic-import
 ```
 
-### Usage
+### Babel
 
 First modify your `babel.config.js` to enable dynamic imports
 
@@ -22,10 +22,26 @@ module.exports = {
     ['babel-plugin-transform-builtin-classes', {
       globals: ['LitElement']
     }],
-    '@babel/plugin-syntax-dynamic-import',
+    '@babel/plugin-syntax-dynamic-import'
   ]
 };
 ```
+
+### ESLint
+
+Modify your `.eslintrc` to contain
+
+```js
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  }
+}
+```
+
+### Usage
 
 Then you can add routes with an object:
 
