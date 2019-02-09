@@ -1,8 +1,8 @@
 {
-  "index.js": "/js/index.af99f9f6ccba4d546fab.bundle.js",
+  "index.js": "/js/index.205919a671cf3e5534dc.bundle.js",
+  "vendors~index.js": "/js/vendors~index.d231d4c85fbad0aac299.bundle.js",
   "./404.html": "/./404.html",
   "logo.png": "/ebf0f11fdb6186dde66c63b5c54038de.png",
   "icons/favicon.png": "/icons/manifest.webapp",
-  "icons/stats.json": "/icons/stats.json",
   "index.html": "/index.html"
 }
