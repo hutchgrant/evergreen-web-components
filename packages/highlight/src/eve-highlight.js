@@ -31,6 +31,7 @@ class Highlighter extends LitElement {
   }
 
   connectedCallback() {
+    super.connectedCallback();
     this.hljs = this.hljs || hljs;
     this.style();
     this.highlight(this.code);
