@@ -22,9 +22,20 @@ class MyComponent extends LitElement {
   }
 
   render() {
+
+    const style = `
+    :host .btn {
+      color: white;
+      background-color: red;
+    }
+    :host .btn:hover {
+      color: red;
+      background-color: white;
+    }`;
+
     return html`
-      <eve-button size="md" href="/docs">Example href Button</eve-button>
-      <eve-button size="md" .onClick="${this.handleClick.bind(this)}">Example function Button</eve-button>
+      <eve-button size="md" href="/docs" style="${style}">Medium href Button</eve-button>
+      <eve-button size="md" .onClick="${this.handleClick.bind(this)}">Medium function Button</eve-button>
     `;
   }
 }
@@ -37,6 +48,7 @@ class MyComponent extends LitElement {
 | size     | Set size of button. e.g. xs, sm, md, lg |
 | href     | Set an anchor to navigate to on click |
 | onClick  | Set a function to callback on click |
+| style    | Set a custom stylesheet for a specific button |
 
 ### Styling
 

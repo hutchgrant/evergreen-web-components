@@ -14,11 +14,15 @@ const propertyList = [
   {
     property: 'onClick',
     description: 'Set a function to callback on click'
+  },
+  {
+    property: 'style',
+    description: 'Set a custom stylesheet for a specific button'
   }
 ];
 
 const usage = `
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from '@polymer/lit-element';
 import '@evergreen-wc/eve-button';
 
 class MyComponent extends LitElement {
@@ -27,9 +31,20 @@ class MyComponent extends LitElement {
   }
 
   render() {
+    const style = \`
+    :host .btn {
+      color: white;
+      background-color: red;
+    }
+    :host .btn:hover {
+      color: red;
+      background-color: white;
+    }
+    \`;
+
     return html\`
-      <eve-button size="md" href="/docs">Medium href Button</eve-button>
-      <eve-button size="md" .onClick="\${this.handleClick.bind(this)}">Medium function Button</eve-button>
+    <eve-button size="md" href="/docs" style="\${style}">Medium href Button</eve-button>
+    <eve-button size="md" .onClick="\${this.handleClick.bind(this)}">Medium function Button</eve-button>
     \`;
   }
 }
@@ -56,21 +71,25 @@ class ButtonDocs extends LitElement {
   render() {
     let test = `
       :host .btn {
-        color: red;
+        color: white;
+        background-color: red;
       }
       :host .btn:hover {
-        color: blue;
+        color: red;
+        background-color: white;
       }
     `;
 
     let test2 = `
-    :host .btn {
-      color: yellow;
-    }
-    :host .btn:hover {
-      color: pink;
-    }
-  `;
+      :host .btn {
+        color: white;
+        background-color: blue;
+      }
+      :host .btn:hover {
+        color: blue;
+        background-color: white;
+      }
+    `;
 
     return html`
     <style>
@@ -94,10 +113,10 @@ class ButtonDocs extends LitElement {
         install="$ npm i @evergreen-wc/eve-button"
         styleVar=${styleVar}
         >
-        <eve-button size="lg" href="/docs" color="blue" backgroundColor="red" style=${test}>Large href Button</eve-button>
+        <eve-button size="lg" href="/docs" style=${test}>Large href Button</eve-button>
         <eve-button size="lg" .onClick="${this.handleClick.bind(this)}" style=${test2} >Large function Button</eve-button>
         <br />
-        <eve-button size="md" href="/docs" color="teal" backgroundColor="white">Medium href Button</eve-button>
+        <eve-button size="md" href="/docs" color="white" backgroundColor="red">Medium href Button</eve-button>
         <eve-button size="md" .onClick="${this.handleClick.bind(this)}" color="grey" backgroundColor="lightgreen">Medium function Button</eve-button>
         <br />
         <eve-button size="sm" href="/docs">Smaller href Button</eve-button>
