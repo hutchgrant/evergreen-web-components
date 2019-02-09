@@ -1,0 +1,22 @@
+{
+  "name": "@evergreen-wc/lazyroute",
+  "version": "0.0.6",
+  "description": "Lazyload routes with lit-redux-router",
+  "main": "src/lazyRoute.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hutchgrant/evergreen-web-components.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grant Hutchinson(hutchgrant)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "lit-element": "^2.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "0785e6aef51d5a973b638a732f7e3920671dfbbd"
+}
