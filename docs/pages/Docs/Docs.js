@@ -1,4 +1,4 @@
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import css from './Docs.css';
 import '../../components/Docs/DocsList';
 import { navigate } from 'lit-redux-router';
@@ -46,6 +46,12 @@ const demos = [{
   component: html`
       <row-docs></row-docs>
     `
+}, {
+  id: 'lazyroute',
+  label: 'Lazy Route',
+  component: html`
+      <lazy-route-docs></lazy-route-docs>
+    `
 }];
 
 class DocsPage extends LitElement {
@@ -62,11 +68,13 @@ class DocsPage extends LitElement {
   }
 
   connectedCallback() {
+    super.connectedCallback();
     window.addEventListener('click', this.close.bind(this), false);
   }
 
   disconnectedCallback() {
     window.removeEventListener('click', this.close.bind(this), false);
+    super.disconnectedCallback();
   }
 
   close() {

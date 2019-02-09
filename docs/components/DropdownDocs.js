@@ -1,4 +1,4 @@
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import './Docs/DocsPage';
 import '../../packages/dropdown/src/eve-dropdown';
 
@@ -22,7 +22,7 @@ const propertyList = [
 ];
 
 const usage = `
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import '@evergreen-wc/eve-dropdown';
 
 const options = [

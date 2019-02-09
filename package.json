@@ -12,15 +12,17 @@
     "test": "rimraf ./reports && karma start"
   },
   "dependencies": {
-    "@polymer/lit-element": "^0.6.5",
     "highlight.js": "^9.13.1",
-    "lit-redux-router": "^0.3.5",
+    "lit-redux-router": "^0.6.1",
     "pwa-helpers": "^0.9.0",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.1.0",
     "@webcomponents/webcomponentsjs": "^2.2.1",
     "babel-loader": "^8.0.2",

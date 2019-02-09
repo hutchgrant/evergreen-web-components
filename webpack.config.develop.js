@@ -4,7 +4,7 @@ const webpackMerge = require('webpack-merge');
 module.exports = webpackMerge(commonConfig, {
 
   mode: 'development',
-  
+
   devServer: {
     port: 1981,
     host: 'localhost',

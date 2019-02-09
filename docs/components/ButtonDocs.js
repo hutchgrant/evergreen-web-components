@@ -1,4 +1,4 @@
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import './Docs/DocsPage';
 import '../../packages/button/src/eve-button';
 
@@ -18,7 +18,7 @@ const propertyList = [
 ];
 
 const usage = `
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import '@evergreen-wc/eve-button';
 
 class MyComponent extends LitElement {
@@ -54,6 +54,24 @@ class ButtonDocs extends LitElement {
   }
 
   render() {
+    let test = `
+      :host .btn {
+        color: red;
+      }
+      :host .btn:hover {
+        color: blue;
+      }
+    `;
+
+    let test2 = `
+    :host .btn {
+      color: yellow;
+    }
+    :host .btn:hover {
+      color: pink;
+    }
+  `;
+
     return html`
     <style>
       :host {
@@ -76,11 +94,11 @@ class ButtonDocs extends LitElement {
         install="$ npm i @evergreen-wc/eve-button"
         styleVar=${styleVar}
         >
-        <eve-button size="lg" href="/docs">Large href Button</eve-button>
-        <eve-button size="lg" .onClick="${this.handleClick.bind(this)}">Large function Button</eve-button>
+        <eve-button size="lg" href="/docs" color="blue" backgroundColor="red" style=${test}>Large href Button</eve-button>
+        <eve-button size="lg" .onClick="${this.handleClick.bind(this)}" style=${test2} >Large function Button</eve-button>
         <br />
-        <eve-button size="md" href="/docs">Medium href Button</eve-button>
-        <eve-button size="md" .onClick="${this.handleClick.bind(this)}">Medium function Button</eve-button>
+        <eve-button size="md" href="/docs" color="teal" backgroundColor="white">Medium href Button</eve-button>
+        <eve-button size="md" .onClick="${this.handleClick.bind(this)}" color="grey" backgroundColor="lightgreen">Medium function Button</eve-button>
         <br />
         <eve-button size="sm" href="/docs">Smaller href Button</eve-button>
         <eve-button size="sm" .onClick="${this.handleClick.bind(this)}">Smaller function Button</eve-button>

@@ -1,11 +1,11 @@
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import './Docs/DocsPage';
 import '../../packages/layout/src/row/eve-row';
 import '../../packages/layout/src/col/eve-col';
 import logo from '../logo.png';
 
 const usage = `
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import '@evergreen-wc/eve-card';
 import '@evergreen-wc/layout';
 

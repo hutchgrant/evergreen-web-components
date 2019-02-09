@@ -1,4 +1,4 @@
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import css from './eve-button.css';
 
 class Button extends LitElement {
@@ -13,8 +13,31 @@ class Button extends LitElement {
       },
       size: {
         type: String
+      },
+      color: {
+        type: String
+      },
+      backgroundColor: {
+        type: String
+      },
+      style: {
+        type: String
       }
     };
+  }
+
+  updated(changedProperties) {
+    const shadow = this.shadowRoot;
+    const childNodes = Array.from(shadow.childNodes);
+
+    childNodes.forEach(childNode => {
+      if (childNode.nodeName === 'STYLE') {
+        childNode.textContent += this.style;
+      } else if (childNode.nodeName === 'A') {
+        childNode.style.backgroundColor = this.backgroundColor;
+        childNode.style.color = this.color;
+      }
+    });
   }
 
   /* eslint-disable indent */

@@ -5,7 +5,8 @@ module.exports = {
   plugins: [
     ['babel-plugin-transform-builtin-classes', {
       globals: ['LitElement']
-    }]
+    }],
+    '@babel/plugin-syntax-dynamic-import'
   ]
 
 };

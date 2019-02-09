@@ -1,4 +1,4 @@
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import css from './app.css';
 import '../pages/Home/Home';
 import '../pages/Docs/Docs';
@@ -15,9 +15,6 @@ const menu = [{
 }, {
   label: 'Docs',
   to: '/docs'
-}, {
-  label: 'Examples',
-  to: '/examples'
 }];
 
 class app extends connect(store)(LitElement) {
@@ -30,7 +27,6 @@ class app extends connect(store)(LitElement) {
       <lit-route path="/" component="home-page" active=""></lit-route>
       <lit-route path="/docs" component="docs-page"></lit-route>
       <lit-route path="/docs/:id" component="docs-page"></lit-route>
-      <!-- <lit-route path="/examples" component="examples-page"></lit-route> -->
     `;
   }
 }

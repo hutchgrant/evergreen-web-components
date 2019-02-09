@@ -1,4 +1,4 @@
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import css from './eve-navigation.css';
 
 class NavigationComponent extends LitElement {
@@ -28,11 +28,13 @@ class NavigationComponent extends LitElement {
   }
 
   connectedCallback() {
+    super.connectedCallback();
     window.addEventListener('click', this.close.bind(this), false);
   }
 
   disconnectedCallback() {
     window.removeEventListener('click', this.close.bind(this), false);
+    super.disconnectedCallback();
   }
 
   close() {

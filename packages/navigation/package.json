@@ -13,7 +13,8 @@
   "author": "Grant Hutchinson(hutchgrant)",
   "license": "Apache-2.0",
   "dependencies": {
-    "@polymer/lit-element": "^0.6.5"
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"

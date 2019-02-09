@@ -1,4 +1,4 @@
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import './Docs/DocsPage';
 import '../../packages/container/src/eve-container';
 
@@ -10,7 +10,7 @@ const propertyList = [
 ];
 
 const usage = `
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import '@evergreen-wc/eve-container';
 
 class MyComponent extends LitElement {

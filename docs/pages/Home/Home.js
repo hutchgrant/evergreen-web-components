@@ -1,4 +1,4 @@
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import css from './Home.css';
 import logo from '../../logo.png';
 import '../../../packages/highlight/src/eve-highlight';

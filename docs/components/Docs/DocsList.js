@@ -5,3 +5,4 @@ export * from '../HighlighterDocs';
 export * from '../RowDocs';
 export * from '../ButtonDocs';
 export * from '../CardDocs';
+export * from '../LazyRouteDocs';
