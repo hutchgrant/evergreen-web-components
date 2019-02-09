@@ -96,7 +96,7 @@ module.exports = {
 
 const install = `
 $ npm i @evergreen-wc/lazyroute lit-html lit-redux-router pwa-helpers redux redux-thunk
-$ npm i --save-dev @babel/plugin-syntax-dynamic-import"
+$ npm i --save-dev babel-eslint @babel/plugin-syntax-dynamic-import
 `;
 
 class LazyDocs extends connect(store)(LitElement) {
