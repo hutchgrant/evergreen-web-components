@@ -11,6 +11,12 @@ module.exports = webpackMerge(commonConfig, {
     hints: false
   },
 
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
+
   plugins: [
     new FaviconsWebpackPlugin({
       logo: './favicon.png',
