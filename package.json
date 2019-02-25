@@ -51,7 +51,7 @@
     "karma-junit-reporter": "^1.2.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^3.0.5",
-    "lerna": "^3.8.0",
+    "lerna": "^3.13.0",
     "local-web-server": "^2.6.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-loader": "^3.0.0",
@@ -60,7 +60,7 @@
     "webpack": "^4.22.0",
     "webpack-bundle-analyzer": "^3.0.2",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.9",
+    "webpack-dev-server": "^3.2.0",
     "webpack-manifest-plugin": "^2.0.4",
     "webpack-merge": "^4.1.4"
   },
