@@ -1,7 +1,8 @@
 {
-  "index.js": "/js/index.9b77f1791b9c960adb40.bundle.js",
-  "vendors~index.js": "/js/vendors~index.d231d4c85fbad0aac299.bundle.js",
+  "index.js": "/js/index.35d00fba151c37a37dd0.bundle.js",
+  "vendors~index.js": "/js/vendors~index.b18a67e5b57cef0e0d2d.bundle.js",
   "./404.html": "/./404.html",
+  "404.html": "/404.html",
   "logo.png": "/ebf0f11fdb6186dde66c63b5c54038de.png",
   "icons/favicon.png": "/icons/manifest.webapp",
   "index.html": "/index.html"
