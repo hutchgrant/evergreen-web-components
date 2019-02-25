@@ -17,6 +17,12 @@ module.exports = {
     publicPath
   },
 
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
+
   module: {
     rules: [
       {
@@ -44,9 +50,6 @@ module.exports = {
   },
 
   plugins: [
-    new CopyWebpackPlugin([
-      { from: '404.html', to: './404.html' }
-    ]),
     new HtmlWebpackPlugin({
       template: './index.html',
       chunksSortMode: 'dependency'
