@@ -1,6 +1,6 @@
 {
   "name": "@evergreen-wc/lazyroute",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Lazyload routes with lit-redux-router",
   "main": "src/lazyRoute.js",
   "repository": {

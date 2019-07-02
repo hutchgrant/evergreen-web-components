@@ -1,6 +1,6 @@
 {
   "name": "@evergreen-wc/eve-button",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "Button made with lit element",
   "main": "src/eve-button.js",
   "repository": {
