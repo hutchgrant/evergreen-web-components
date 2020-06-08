@@ -1,10 +1,10 @@
-:host {
-  @custom-media --screen-xs (max-width: 576px);
-  @custom-media --screen-sm (min-width: 576px);
-  @custom-media --screen-md (min-width: 768px);
-  @custom-media --screen-lg (min-width: 992px);
-  @custom-media --screen-xl (min-width: 1200px);
+@custom-media --screen-xs (max-width: 576px);
+@custom-media --screen-sm (min-width: 576px);
+@custom-media --screen-md (min-width: 768px);
+@custom-media --screen-lg (min-width: 992px);
+@custom-media --screen-xl (min-width: 1200px);
 
+:host {
   & .container {
     margin-right: auto;
     margin-left: auto;

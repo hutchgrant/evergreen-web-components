@@ -1,3 +1,9 @@
+@custom-media --screen-xs (max-width: 576px);
+@custom-media --screen-sm (min-width: 576px);
+@custom-media --screen-md (min-width: 768px);
+@custom-media --screen-lg (min-width: 992px);
+@custom-media --screen-xl (min-width: 1200px);
+
 :host {
   --primary-color: green;
   --secondary-color: #fff;
@@ -28,12 +34,6 @@
   --navigation-menu-mobile-drop-text-color:  var(--nav-menu-mobile-drop-text-color,var(--primary-color));
 
   width: 100%;
-
-  @custom-media --screen-xs (max-width: 576px);
-  @custom-media --screen-sm (min-width: 576px);
-  @custom-media --screen-md (min-width: 768px);
-  @custom-media --screen-lg (min-width: 992px);
-  @custom-media --screen-xl (min-width: 1200px);
 
   & nav {
     background-color: var(--navigation-background);
