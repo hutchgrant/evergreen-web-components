@@ -52,6 +52,12 @@ const demos = [{
   component: html`
       <lazy-route-docs></lazy-route-docs>
     `
+}, {
+  id: 'carousel',
+  label: 'Carousel',
+  component: html`
+      <carousel-docs></carousel-docs>
+    `
 }];
 
 class DocsPage extends LitElement {
