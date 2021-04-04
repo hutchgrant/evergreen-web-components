@@ -1,45 +1,40 @@
-# eve-highlight
+# eve-gallery
 
-An Evergreen Highlight.js Web Component
+An Evergreen Gallery Web Component
 
-[Demo](https://hutchgrant.github.io/evergreen-web-components/docs/highlight)
+[Demo](https://hutchgrant.github.io/evergreen-web-components/docs/gallery)
 
 ### Install
 
 ```bash
-npm i @evergreen-wc/eve-highlight
+npm i @evergreen-wc/eve-gallery
 ```
 
 ### Usage
 
 ```js
 import { html, LitElement } from '@polymer/lit-element';
-import '@evergreen-wc/eve-highlight';
+import '@evergreen-wc/eve-gallery';
 
-// highlightjs themes https://github.com/highlightjs/highlight.js/tree/master/src/styles
-import github from '@evergreen-wc/eve-highlight/themes/github.css';
-
-// Javascript example
-// Escape $ with \
-const code = `
-class MyComponent extends LitElement {
-  constructor() {
-    this.name = 'helloworld'
-  }
-
-  renderThing() {
-    if(this.name === 'helloworld'){
-      console.log(this.name)
-    }
-  }
-}
-customElements.define('my-component', MyComponent);
-`;
+const images = [
+  { src: '/assets/bee-6127510_640.jpg' },
+  { src: '/assets/cake-4890393_640.jpg' },
+  { src: '/assets/child-6109480_640.jpg' },
+  { src: '/assets/concert-5878452_640.jpg' },
+  { src: '/assets/daffodils-1316128_640.jpg' },
+  { src: '/assets/easter-4945288_640.jpg' },
+  { src: '/assets/easter-6035549_640.jpg' },
+  { src: '/assets/eggs-3216877_640.jpg' },
+  { src: '/assets/field-6109500_640.jpg' },
+  { src: '/assets/willow-catkin-2249018_640.png' },
+  { src: '/assets/willow-catkin-4949064_640.jpg' },
+  { src: '/assets/wood-anemone-4112178_640.jpg' }
+];
 
 class SomeComponent extends LitElement {
   render() {
     return html`
-      <eve-highlight type="js" theme="${github}" code="${code}"></eve-highlight>
+      <eve-gallery .images="\${images}"/>
     `;
   }
 }
@@ -50,7 +45,5 @@ customElements.define('some-component', SomeComponent);
 
 | Property | Description |
 | -------- | ----------- |
-| type     | Set the syntax type e.g. html, css, js, xml, bash |
-| theme    | Set the imported CSS file. |
-| code     | Set the code string to highlight. |
-| hljs     | Optionally you may wish to use a language not already registered due to optimization. You can import and register the languages in your own hljs object and add it as an attribute. |
+| images     | array of image objects { src: 'image.jpg' } |
+| carousel    | default true. toggle carousel visibility on click |

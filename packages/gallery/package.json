@@ -1,6 +1,6 @@
 {
   "name": "@evergreen-wc/eve-gallery",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Gallery component made with lit element",
   "main": "src/gallery/gallery.js",
   "repository": {
