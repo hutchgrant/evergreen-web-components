@@ -1,7 +1,6 @@
 import { html, LitElement } from 'lit-element';
 import './Docs/DocsPage';
 import '../../packages/card/src/eve-card';
-import '../../packages/layout/src/row/eve-row';
 import logo from '../logo.png';
 
 const propertyList = [

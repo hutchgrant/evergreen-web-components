@@ -1,0 +1,53 @@
+Arguments: 
+  /home/skynet/.nvm/versions/node/v12.19.0/bin/node /usr/share/yarn/bin/yarn.js add @evergreen-wc/layout @evergreen-wc/carousel @evergreen-wc/eve-card
+
+PATH: 
+  /home/skynet/.amplify/bin:/home/skynet/.nvm/versions/node/v12.19.0/bin:/home/skynet/Android/Sdk/tools:/home/skynet/Android/Sdk/platform-tools:/home/skynet/.amplify/bin:/home/skynet/Android/Sdk/tools:/home/skynet/Android/Sdk/platform-tools:/opt/apache-maven/bin:/home/skynet/bin:/home/skynet/.local/bin:/opt/apache-maven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/media/skynet/DATA/software/Android/Sdk/emulator:/media/skynet/DATA/software/Android/Sdk/tools:/media/skynet/DATA/software/Android/Sdk/tools/bin:/media/skynet/DATA/software/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.19.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.npmjs.org/@evergreen-wc%2fcarousel: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66947:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140665:22)
+      at Request.emit (events.js:314:20)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141637:10)
+      at Request.emit (events.js:314:20)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141559:12)
+      at Object.onceWrapper (events.js:420:28)
+      at IncomingMessage.emit (events.js:326:22)
+      at endReadableNT (_stream_readable.js:1223:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "@evergreen-wc/eve-gallery",
+    "version": "0.0.10",
+    "description": "Gallery component made with lit element",
+    "main": "src/gallery/gallery.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/hutchgrant/evergreen-web-components.git"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Grant Hutchinson(hutchgrant)",
+    "license": "Apache-2.0",
+    "publishConfig": {
+      "access": "public"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

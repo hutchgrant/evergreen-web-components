@@ -51,6 +51,11 @@ module.exports = {
     new ManifestPlugin({
       fileName: 'manifest.json',
       publicPath
-    })
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: path.join(__dirname, './docs/assets'), to: path.join(__dirname, './public/assets') },
+      ],
+    }),
   ]
 };

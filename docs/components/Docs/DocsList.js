@@ -7,3 +7,4 @@ export * from '../ButtonDocs';
 export * from '../CardDocs';
 export * from '../LazyRouteDocs';
 export * from '../CarouselDocs';
+export * from '../GalleryDocs';

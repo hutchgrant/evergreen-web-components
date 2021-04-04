@@ -58,6 +58,12 @@ const demos = [{
   component: html`
       <carousel-docs></carousel-docs>
     `
+}, {
+  id: 'gallery',
+  label: 'Gallery',
+  component: html`
+      <gallery-docs></gallery-docs>
+    `
 }];
 
 class DocsPage extends LitElement {
