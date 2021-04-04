@@ -1,7 +1,7 @@
 // Based on the work from https://github.com/kcmr/code-sample
 
 import { LitElement } from 'lit-element';
-import hljs from 'highlight.js/lib/highlight';
+import hljs from 'highlight.js/lib/core';
 import css from './eve-highlight.css';
 import defaultTheme from '../themes/default.css';
 

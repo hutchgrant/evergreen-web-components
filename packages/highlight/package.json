@@ -1,6 +1,6 @@
 {
   "name": "@evergreen-wc/eve-highlight",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Highlight.js component made with lit element",
   "main": "src/eve-highlight.js",
   "repository": {
@@ -13,7 +13,7 @@
   "author": "Grant Hutchinson(hutchgrant)",
   "license": "Apache-2.0",
   "dependencies": {
-    "highlight.js": "^9.13.1",
+    "highlight.js": ">=10.4.1",
     "lit-element": "^2.0.1"
   },
   "publishConfig": {
