@@ -9,7 +9,11 @@ const propertyList = [
   },
   {
     property: 'carousel',
-    description: 'boolean for enabling carousel modal'
+    description: 'default false. boolean for enabling carousel modal'
+  },
+  {
+    property: 'autoplay',
+    description: 'default false. boolean for enabling autoplay in carousel'
   }
 ];
 
@@ -31,7 +35,10 @@ const images = [
 const usage = `
 const images = ${JSON.stringify(images)}
 
-<eve-gallery .images="\${images}"/>
+<eve-gallery
+  carousel
+  autoplay
+  .images="\${images}"/>
 `;
 
 const styleVar = '';
@@ -41,13 +48,16 @@ class GalleryDocs extends LitElement {
     return html`
       <eve-docs
         title="Gallery"
-        description="A simple gallery component."
+        description="A simple gallery component with carousel."
         usage=${usage}
         styleVar=${styleVar}
         install="$ npm i @evergreen-wc/eve-gallery"
         .props=${propertyList}
         >
-        <eve-gallery .images="${images}"/>
+        <eve-gallery
+          carousel
+          autoplay
+          .images="${images}"/>
       </eve-docs>
     `;
   }

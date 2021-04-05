@@ -7,8 +7,11 @@ class Carousel extends LitElement {
   static get properties() {
     return {
       speed: { type: Number },
+      autoplay: { type: Boolean },
       showIndicators: { type: Boolean },
-      showArrows: { type: Boolean }
+      showArrows: { type: Boolean },
+      initialSlide: { type: Number },
+      slides: { type: Array }
     };
   }
 
@@ -17,24 +20,62 @@ class Carousel extends LitElement {
     this.slides = [];
     this.carousel = '';
     this.speed = 2000; // 2 seconds
+    this.initialSlide = 0;
+    this.autoplay = false;
   }
 
   async connectedCallback() {
     super.connectedCallback();
     this.slides = this.querySelectorAll('.slide');
+    window.addEventListener('slideschange', () => this.setAllSlides(), true);
+  }
+
+  setAllSlides() {
+    this.slides = this.querySelectorAll('.slide');
+    this.requestUpdate();
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    window.removeEventListener('slideschange', () => this.setAllSlides());
   }
 
   firstUpdated() {
     this.carousel = this.shadowRoot.querySelector('.carousel');
-    this.indicators = this.shadowRoot.querySelectorAll('.indicator');
-    this.carouselShow(0);
-    this.switcher = setInterval(() => {
-      this.switchSlide(true);
-    }, this.speed);
+    this.initIndicators();
+    this.carouselShow(this.initialSlide);
+    this.resetTimer();
+  }
 
+  initIndicators() {
+    this.indicators = this.shadowRoot.querySelectorAll('.indicator');
     for (var i = 0; i < this.indicators.length; i++) {
       this.indicators[i].addEventListener('click', this.setSlide(i), true);
+      this.indicators[i].setAttribute('data-state', '');
+      this.slides[i].setAttribute('data-state', '');
+
+      this.carouselHide(i);
     }
+  }
+
+  resetTimer() {
+    if (this.autoplay) {
+      this.switcher = setInterval(() => {
+        this.switchSlide(true);
+      }, this.speed);
+    }
+  }
+
+  updated(changedProperties) {
+    changedProperties.forEach(async (oldValue, propName) => {
+      if (propName === 'initialSlide' && this.initialSlide) {
+        this.setSlide(this.initialSlide)();
+      } else if (propName === 'slides') {
+        await this.updateComplete;
+        this.initIndicators();
+        this.carouselShow(this.initialSlide);
+      }
+    });
   }
 
   carouselHide(num) {
@@ -52,22 +93,14 @@ class Carousel extends LitElement {
 
   setSlide(slide) {
     return () => {
-
-      // Reset all slides
-      for (var i = 0; i < this.indicators.length; i++) {
-        this.indicators[i].setAttribute('data-state', '');
-        this.slides[i].setAttribute('data-state', '');
-
-        this.carouselHide(i);
-      }
-
-      // Set defined slide as active
-      this.indicators[slide].setAttribute('data-state', 'active');
-      this.slides[slide].setAttribute('data-state', 'active');
+      this.initIndicators();
       this.carouselShow(slide);
 
       // Stop the auto-switcher
-      clearInterval(this.switcher);
+      if (this.autoplay) {
+        clearInterval(this.switcher);
+        this.resetTimer();
+      }
     };
   }
 

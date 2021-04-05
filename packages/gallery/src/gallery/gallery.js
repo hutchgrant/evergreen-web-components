@@ -46,20 +46,23 @@ class EveGallery extends LitElement {
     return {
       thumbSize: { type: String },
       images: { type: Array },
-      carousel: { type: Boolean }
+      carousel: { type: Boolean },
+      autoplay: { type: Boolean }
     };
   }
 
   constructor() {
     super();
     this.thumbSize = 'sm';
-    this.carousel = true;
+    this.carousel = false;
+    this.autoplay = false;
     this.images = [];
     this.observer = '';
     this.displayImages = [];
     this.imageCount = 0;
     this.defaultCallbackAlreadyTriggered = false;
     this.showModal = false;
+    this.selectedImgIndex = 0;
   }
 
   connectedCallback() {
@@ -83,6 +86,9 @@ class EveGallery extends LitElement {
         // callback is fired immediately on load /bug
         if (this.defaultCallbackAlreadyTriggered) {
           this.fillImages(10);
+          let event = new Event('slideschange');
+
+          dispatchEvent(event);
           this.requestUpdate();
         }
         this.defaultCallbackAlreadyTriggered = true;
@@ -130,6 +136,8 @@ class EveGallery extends LitElement {
         ?show=${this.showModal}
         @modal-closed="${this.showCarousel}">
         <gallery-carousel
+          initialSlide="${this.selectedImgIndex}"
+         ?autoplay=${this.autoplay}
           speed='2000'
           showArrows
           showIndicators>

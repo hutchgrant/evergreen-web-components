@@ -13,7 +13,7 @@ npm i @evergreen-wc/eve-gallery
 ### Usage
 
 ```js
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit-element';
 import '@evergreen-wc/eve-gallery';
 
 const images = [
@@ -34,7 +34,7 @@ const images = [
 class SomeComponent extends LitElement {
   render() {
     return html`
-      <eve-gallery .images="\${images}"/>
+      <eve-gallery autoplay .images="\${images}"/>
     `;
   }
 }
@@ -45,5 +45,6 @@ customElements.define('some-component', SomeComponent);
 
 | Property | Description |
 | -------- | ----------- |
-| images     | array of image objects { src: 'image.jpg' } |
-| carousel    | default true. toggle carousel visibility on click |
+| images  | array of image objects { src: 'image.jpg' } |
+| carousel  | default false. toggle carousel visibility on click |
+| autoplay  | default false.  add autoplay to toggle carousel autoplay |
