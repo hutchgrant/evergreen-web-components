@@ -1,6 +1,6 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable vars-on-top */
-import { LitElement, html } from 'lit-element';
+import { LitElement, html } from 'lit';
 import css from './eve-carousel.css';
 
 class Carousel extends LitElement {

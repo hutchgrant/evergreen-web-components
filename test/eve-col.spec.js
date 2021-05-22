@@ -1,5 +1,4 @@
-import { html } from 'lit-element';
-import { render } from 'lit-html';
+import { html, render } from 'lit';
 import '../packages/layout/src/col/eve-col.js';
 
 describe('Col Component', () => {

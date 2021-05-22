@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 
 class Row extends LitElement {
   render() {

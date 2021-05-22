@@ -1,5 +1,4 @@
-import { html } from 'lit-element';
-import { render } from 'lit-html';
+import { html, render } from 'lit';
 import '../packages/card/src/eve-card.js';
 import logo from '../docs/logo.png';
 

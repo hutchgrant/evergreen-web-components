@@ -1,5 +1,4 @@
-import { html } from 'lit-element';
-import { render } from 'lit-html';
+import { html, render } from 'lit';
 import '../packages/highlight/src/eve-highlight.js';
 import github from '../packages/highlight/themes/github.css';
 

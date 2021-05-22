@@ -14,7 +14,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@evergreen-wc/eve-card": "^0.0.9",
-    "lit-element": "^2.0.1"
+    "lit": "^2.0.0-rc.2"
   },
   "publishConfig": {
     "access": "public"

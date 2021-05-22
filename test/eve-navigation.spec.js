@@ -1,5 +1,4 @@
-import { html } from 'lit-element';
-import { render } from 'lit-html';
+import { html, render } from 'lit';
 import '../packages/navigation/src/eve-navigation.js';
 
 describe('Navigation Component', () => {

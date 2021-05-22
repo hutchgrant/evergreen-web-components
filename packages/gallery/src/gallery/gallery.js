@@ -1,4 +1,4 @@
-import { html, css, LitElement } from 'lit-element';
+import { html, css, LitElement } from 'lit';
 import '../row/row';
 import '../card/card';
 import '../modal/modal';

@@ -1,5 +1,4 @@
-import { html } from 'lit-element';
-import { render } from 'lit-html';
+import { html, render } from 'lit';
 import '../docs/components/Docs/DocsPage.js';
 
 describe('Docs Page Component', () => {

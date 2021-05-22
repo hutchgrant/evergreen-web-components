@@ -14,7 +14,7 @@ module.exports = webpackMerge(commonConfig, {
       aggregateTimeout: 300,
       poll: 1000
     },
-    contentBase: path.join(__dirname, 'public'),
+    contentBase: path.join(__dirname, 'public')
 
   }
 

@@ -1,5 +1,4 @@
-import { html } from 'lit-element';
-import { render } from 'lit-html';
+import { html, render } from 'lit';
 import '../packages/dropdown/src/eve-dropdown.js';
 
 describe('Dropdown Component', () => {
