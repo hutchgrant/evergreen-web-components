@@ -1,6 +1,6 @@
 {
   "name": "@evergreen-wc/layout",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Layout components made with lit element",
   "main": "src/row/eve-row.js",
   "repository": {
@@ -13,7 +13,7 @@
   "author": "Grant Hutchinson(hutchgrant)",
   "license": "Apache-2.0",
   "dependencies": {
-    "@evergreen-wc/eve-card": "^0.1.0",
+    "@evergreen-wc/eve-card": "^0.1.1",
     "lit": "^2.0.0-rc.2"
   },
   "publishConfig": {

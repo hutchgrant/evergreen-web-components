@@ -1,6 +1,6 @@
 {
   "name": "@evergreen-wc/eve-dropdown",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dropdown component made with lit element",
   "main": "src/eve-dropdown.js",
   "repository": {
