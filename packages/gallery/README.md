@@ -13,7 +13,7 @@ npm i @evergreen-wc/eve-gallery
 ### Usage
 
 ```js
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import '@evergreen-wc/eve-gallery';
 
 const images = [

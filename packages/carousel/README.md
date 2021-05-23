@@ -15,7 +15,7 @@ npm i @evergreen-wc/eve-carousel
 ### Usage
 
 ```js
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import '@evergreen-wc/eve-carousel';
 
 class MyComponent extends LitElement {

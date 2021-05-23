@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import './Docs/DocsPage';
 import '../../packages/carousel/src/eve-carousel';
 

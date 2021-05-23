@@ -9,6 +9,7 @@ describe('Button Component', () => {
     const url = 'https://www.google.com/';
 
     const handleClick = () => {
+      // eslint-disable-next-line no-console
       console.log('button clicked!');
     };
 

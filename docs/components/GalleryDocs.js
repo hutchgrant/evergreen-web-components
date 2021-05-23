@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import './Docs/DocsPage';
 import '../../packages/gallery/src/gallery/gallery';
 

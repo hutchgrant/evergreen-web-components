@@ -6,7 +6,7 @@
 [![GitHub license](https://img.shields.io/badge/license-apache-blue.svg)](https://raw.githubusercontent.com/hutchgrant/evergreen-web-components/master/LICENSE)
 
 ## Overview
-A library of simple web components built on top of [LitElement](https://github.com/Polymer/lit-element)
+A library of simple web components built on top of [Litr](https://github.com/lit/lit/)
 
 ### Project Goals
 Making development easier and providing example components to people new to Web Components.

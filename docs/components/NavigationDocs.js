@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import './Docs/DocsPage';
 import '../../packages/navigation/src/eve-navigation';
 
@@ -22,7 +22,7 @@ const propertyList = [
 ];
 
 const usage = `
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 
 import '@evergreen-wc/eve-navigation';
 

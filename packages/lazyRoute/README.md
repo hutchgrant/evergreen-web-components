@@ -68,7 +68,7 @@ with the element:
 
 
 ```js
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import { connectRouter } from 'lit-redux-router';
 import { connect } from 'pwa-helpers/connect-mixin.js';
 import '@evergreen-wc/lazyroute';

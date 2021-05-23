@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import './Docs/DocsPage';
 import '../../packages/card/src/eve-card';
 import logo from '../logo.png';
@@ -16,7 +16,7 @@ const propertyList = [
 ];
 
 const usage = `
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import '@evergreen-wc/eve-card';
 
 class MyComponent extends LitElement {

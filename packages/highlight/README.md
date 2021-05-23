@@ -13,7 +13,7 @@ npm i @evergreen-wc/eve-highlight
 ### Usage
 
 ```js
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit';
 import '@evergreen-wc/eve-highlight';
 
 // highlightjs themes https://github.com/highlightjs/highlight.js/tree/master/src/styles

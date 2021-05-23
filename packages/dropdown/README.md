@@ -13,7 +13,7 @@ npm i @evergreen-wc/eve-dropdown
 ### Usage
 
 ```js
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit';
 import '@evergreen-wc/eve-dropdown';
 
 const options = [

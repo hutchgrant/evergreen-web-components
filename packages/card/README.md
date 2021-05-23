@@ -14,7 +14,7 @@ npm i @evergreen-wc/eve-card
 ### Usage
 
 ```js
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit';
 import '@evergreen-wc/eve-card';
 
 class MyComponent extends LitElement {

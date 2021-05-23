@@ -17,7 +17,9 @@ describe('Dropdown Component', () => {
     });
 
     const handleSelection = (value, idx) => {
+      // eslint-disable-next-line no-console
       console.log('selected', value);
+      // eslint-disable-next-line no-console
       console.log('index', idx);
     };
 

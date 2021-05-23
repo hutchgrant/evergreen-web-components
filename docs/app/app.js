@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import css from './app.css';
 import '../pages/Home/Home';
 import '../pages/Docs/Docs';

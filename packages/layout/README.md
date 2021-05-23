@@ -13,7 +13,7 @@ npm i @evergreen-wc/eve-layout
 ### Usage
 
 ```js
-import { html, LitElement } from '@polymer/lit-element';
+import { html, LitElement } from 'lit';
 import '@evergreen-wc/layout/eve-row';
 import '@evergreen-wc/eve-card';
 

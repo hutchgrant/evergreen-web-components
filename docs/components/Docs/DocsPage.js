@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import './DocsTable';
 import '../../../packages/highlight/src/eve-highlight';
 import qtcreator from '../../../packages/highlight/themes/qtcreator-light.css';

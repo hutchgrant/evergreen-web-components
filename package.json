@@ -15,7 +15,7 @@
     "gh-pages:build": "rimraf ./public && webpack --config ./webpack.config.ghpages.js --progress"
   },
   "dependencies": {
-    "highlight.js": "^9.18.5",
+    "highlight.js": "^10.7.2",
     "lit": "^2.0.0-rc.2",
     "lit-redux-router": "^0.6.2",
     "postcss-nested": "^5.0.5",

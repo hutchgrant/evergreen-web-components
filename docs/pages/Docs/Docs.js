@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import css from './Docs.css';
 import '../../components/Docs/DocsList';
 import { navigate } from 'lit-redux-router';
