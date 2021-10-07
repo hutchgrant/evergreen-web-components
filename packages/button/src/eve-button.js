@@ -1,5 +1,5 @@
-import { html, LitElement } from 'lit';
-import css from './eve-button.css';
+import { css, html, LitElement, unsafeCSS } from 'lit';
+import eveButtonCss from './eve-button.css';
 
 class Button extends LitElement {
 
@@ -20,7 +20,13 @@ class Button extends LitElement {
     };
   }
 
-  updated(changedProperties) {
+  get styles() {
+    return css`
+      ${unsafeCSS(eveButtonCss)}
+    `;
+  }
+
+  updated() {
     const shadow = this.shadowRoot;
     const childNodes = Array.from(shadow.childNodes);
 
@@ -38,9 +44,8 @@ class Button extends LitElement {
     const { size, href, onClick } = this;
 
     return html`
-    <style>
-      ${css}
-    </style>
+      <style>
+      </style>
       ${href
         ? html`
           <a class="btn btn-${size}" href="${href}">
